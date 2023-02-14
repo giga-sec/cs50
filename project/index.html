@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> MCC Website - Home </title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+</head>
+
+<body>
+    <header>
+    <div class="container">
+    <header class="bg-success  bg-gradient d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+            style="--bs-bg-opacity: .5;">
+      <a href="index.html">
+        <img class="col-12 px-5" src="images/mcc_logo.png" alt="Mandaue City College Logo">
+      </a>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="index.html" class="nav-link px-5 fs-5 link-dark">Home</a></li>
+        <li><a href="https://www.facebook.com/MCCBulletin" class="nav-link px-3 fs-5 link-dark">News</a></li>
+        <li><a href="index.html#courses" class="nav-link px-5 fs-5 link-dark">Courses</a></li>
+        <li><a href="about.html" class="nav-link px-5 fs-5 link-dark">About Us</a></li>
+        <li><a href="contact_us.html" class="nav-link px-5 fs-5 link-dark">Contact Us</a></li>
+      </ul>
+
+    </header>
+
+    <main>
+  <!--
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Album example</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
+    </div>
+  </section>
+-->
+
+
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/mcc_pic.jpg">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Your Success is guaranteed with us</h1>
+            <p>Take a look at our Vision, Mission and Core Values</p>
+            <p><a class="btn btn-lg btn-primary" href="index.html#vision_mission_corevalues">Click here</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/mcc_pic1.jpg">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Browse Courses Offered</h1>
+            <p>MCC offers courses relevant to the demands of todays industry</p>
+            <p><a class="btn btn-lg btn-primary" href="index.html#courses">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/mcc_pic3.jpg">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Check out our Photos</h1>
+            <p>Link will be redirected to our facebook page</p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.facebook.com/MCCBulletin/photos_albums">Browse Gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <section id="vision_mission_corevalues">
+  <div class="container marketing">
+
+    <hr class="featurette-divider">
+
+
+    <h2 class="text-center mt-5 mb-5">Vision, Mission and Core Values</h2>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Vision<span class="text-muted"></span></h2>
+        <p class="lead">
+            As a learner-centered public institution, Mandaue City College envisions excellence, innovation and success in education to inspire and transform lives to be responsible citizens and will be prepared for a variety of post-graduation options.
+      </p>
+      </div>
+      <div class="col-md-5">
+        <img src="images/vision.jpg">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Mission<span class="text-muted"></span></h2>
+        <p class="lead">
+Provide relevant, equitable and quality affordable education and in the fulfillment of its
+rnandate, Mandaue City College shall:
+<ul class="text-secondary">
+<li>Design and implement programs which are at par with international standards using
+appropriate technology for effective and efficient delivery of educational services;
+</li>
+<li>
+Ensure that higher education is accessible to all who seek it for continuing intellectual
+growth, advancement of learning, research, development and community extension
+as well as environmental conservation and protection;
+</li>
+
+<li>
+Produce graduates and professionals who are highly competent and recognized in the
+local, regional, national, and international arena;
+</li>
+
+<li>
+Commit to moral ascendancy and probity, institutionalize transparency and
+accountability, productivity and encourage participatory governance.
+</li>
+
+      </ul>
+      </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="images/mission.jpg">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Core Values<span class="text-muted"></span></h2>
+        <p class="lead">
+<ul class="text-secondary">
+<li> M - eritocracy — equality of oppcxtunity on the basis of talent, effort and achievement</li>
+<li> A - ccountability — holding everyone with responsibilities to high standards of performance
+<li> N - eatness — imbibe a habit or quality of being environmentally tidy and aesthetically
+pleasing to the senses
+<li> D - iversity — reflect inclusiveness with all ethnic, socio economic, educational, abilities, and
+cultural backgrounds.
+<li> A - gility — flexible, responsive, and courageous when needs require change in practices
+and conditions
+<li> U - nity — the importance of the collective good and bond is greater than the gain of
+individuals, departrnents, and colleges
+</li> E - xcellence — strive for excellence in all our academic pursuits innovation in our teaching,
+research, and outreach to our communities through continuous self-improvement
+</ul>
+
+      </p>
+      </div>
+      <div class="col-md-5">
+        <img class="md-5" src="images/core_values.jpg">
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+</session>
+
+
+
+
+  <div class="album py-5 bg-light">
+  <section class="text-center" id="courses">
+    <h2>Courses Offered</h2>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm">
+              <img src="images/sob_logo.jpg">
+              <div class="card-body">
+            <a class="card-link" href="sob.html">
+              <h3 class="text-center"> School of Business </h3>
+            </a>
+              <p class="card-text">
+              The School of Business (SOB) of the Mandaue City College has since been at the forefront of the formation of national business and educational leaders and breakthrough business research, all in pursuit of academic excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+        </a>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/soe_logo.png">
+            <div class="card-body">
+              <a class="card-link" href="soe.html">
+              <h3 class="text-center"> School of Education </h3>
+              </a>
+              <p class="card-text">
+                The School of Education (SOE) of the Mandaue City College prepares you to be a high-qualified teacher and have an excellent leadership in education.
+              <br><br><br>
+              </p>
+            </div>
+          </div>
+        </div>
+        </a>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/sot_logo.jpg">
+            <div class="card-body">
+              <a class="card-link" href="sot.html">
+              <h3 class="text-center"> School of Technology </h3>
+              </a>
+              <p class="card-text">
+                The School of Information Technology fosters innovation, problem-solving, and learning. Students work alongside faculty to solve real-world problems as well as explore new initiatives and innovations.
+              <br><br>
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
+    </main>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 MCC, Inc. &middot;</p>
+  </footer>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> </title>
+  </head>
+  <body>
+        <h1>Trivia!</h1>
+        <h2>Part 1: Multiple Choice</h2>
+        <h3>When did Mr Beast hit 100 Million Subscribers?</h3>
+        <button class="correct">July 28</button>
+        <button class="incorrect">August 27</button>
+        <button class="incorrect">June 26</button>
+
+        <p id="feedback1"></p>
+
+        <h2>Part2: Free Response</h2>
+        <h3>Who created this website</h3>
+        <input type="text"></input>
+        <button id="check">Check Answer</button>
+        <p id="feedback2"></p>
+
+        
+
+
+    <script>
+
+
+            let correct = document.querySelector('.correct');
+            correct.addEventListener('click', function() {
+                correct.style.backgroundColor = 'green';
+                document.querySelector('#feedback1').innerHTML = 'Correct!';
+            });
+
+            let incorrects = document.querySelectorAll('.incorrect');
+            for (let i = 0; i < incorrects.length; i++) {
+                incorrects[i].addEventListener('click', function() {
+                    incorrects[i].style.backgroundColor = 'red';
+                    document.querySelector('#feedback1').innerHTML = 'Incorrect!';
+                });
+            }
+
+            document.querySelector('#check').addEventListener('click', function () {
+                let input = document.querySelector('input');
+                if (input.value === 'gigaSec') {
+                    input.style.backgroundColor = 'green';
+                    document.querySelector('#feedback2').innerHTML = 'Correct!';
+                } else {
+                    input.style.backgroundColor = 'red';
+                    document.querySelector('#feedback2').innerHTML = 'Incorrect';
+                }
+            });
+    </script>
+
+    </body>
+  </body>
+</html>

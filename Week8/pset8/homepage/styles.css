@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    margin: 1em;
+    border: 5px outset pink;
+    outline-offset: 0.5rem;
+    outline: 0.5rem solid khaki;
+   box-shadow: 0 0 0 2rem skyblue;
+}
+
+.img_cookie {
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 15px;
+    filter: opacity(30%);
+}
+
+#quick_facts {
+    text-align: center;
+    margin: 1em;
+    border: 5px groove pink;
+    padding: 1em;
+    outline: 0.5rem solid skyblue;
+}
+
+#quick_facts::first-letter {
+    color: blue;
+    font-family: "Copperplate";
+    font-size: 100px;
+    background-color: white;
+    border-style: dotted;
+}
+
+#quick_facts:hover {
+    color: red;
+    font-size: 50px;
+    font-family: "Arial";
+    background-color: black;
+    border-style: dotted ;
+}
+
+

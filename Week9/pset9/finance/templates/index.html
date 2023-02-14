@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-start">Name</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">TOTAL</th>
+            </tr>
+        </thead>
+       <tbody>
+            {% if purchases != [] %}
+                {% for purchase in purchases %}
+                <tr>
+                    {% set lookup_val = lookup(purchase['symbol']) %}
+                    {% set total_singleshare_price = lookup_val['price'] * purchase['share_quantity'] %}
+                    {% set share_price = lookup_val['price'] %}
+                    <td class="text-start">{{ purchase['symbol'] }}</td>
+                    <td class="text-start">{{ lookup_val['name'] }}</td>
+                    <td class="text-end">{{ purchase['share_quantity'] }}</td>
+                    <td class="text-end">{{ share_price | usd }}</td>
+                    <td class="text-end">{{ total_singleshare_price | usd }}</td>
+                </tr>
+                {% endfor %}
+            {%- endif %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="4">Cash</td>
+                <td class="border-0 text-end">{{ cash | usd }}</td>
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="4">TOTAL</td>
+                <td class="border-0 w-bold text-end">{{ total_price | usd }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}

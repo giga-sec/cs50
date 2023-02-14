@@ -1,0 +1,1 @@
+SELECT AVG(rating) FROM Ratings JOIN Movies ON Ratings.movie_id = Movies.id WHERE Movies.year = 2012;

@@ -1,0 +1,3 @@
+- Make every letter UPPERCASE
+- Check: if letter is greater than ascii ascii 94 or less than ascii 64 then give 0 points.
+- Else: Decrease each letter by 65 and that will determine the array and at the same time the points of each letter. 
